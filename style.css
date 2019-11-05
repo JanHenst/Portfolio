@@ -1,0 +1,474 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* header gedeelte van pagina */
+
+header {
+  background-image: url('https://www.joomlashack.com/images/Blog/how-to-add-custom-javascript-to-wright.jpg');
+  background-size: cover;
+  height: 30em;
+  color: white;
+  text-align: center;
+}
+
+.naam {
+  font-size: 41px;
+  padding-top: 5em;
+}
+
+.dat {
+  font-size: 25px;
+}
+
+h2, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar gedeelte van pagina */
+
+nav {
+  background-color: #333333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+
+nav a{
+  background-color: #333333;
+  color: white;
+  float: right;
+  margin-top: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.button_nav {
+  margin: 14px 50px;
+  margin-right: .5em;
+  padding: 0 5px;
+}
+.button_nav:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.divs {
+  padding-top: 10px;
+}
+
+.show {
+  display: block;
+}
+
+/* over mij gedeelte van pagina*/
+
+.Overmij {
+  background-color: #e6e6e6;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 2em;
+  margin-bottom: -4px;
+  display: inline-block;
+}
+
+.text_overmij {
+  float: left;
+  display: block;
+  width: 56%;
+  margin-left: 31%;
+}
+
+.text_overmij h1 {
+  font-size: 3em;
+  margin-left: 25%;
+}
+.text_overmij h3 {
+  font-size: 19px;
+}
+.text_overmij p {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+/* Mijn skills gedeelte van pagina */
+
+.skills {
+  background-color: gray;
+  margin-bottom: -2.2em;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.skills h1 {
+  font-size: 3em;
+  margin-left: 25%;
+}
+
+.skills li {
+  margin: 20px 0;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+.html {
+  width: 90%;
+  animation: html 2s;
+}
+.css {
+  width: 70%;
+  animation: css 2s;
+}
+.javascript {
+  width: 60%;
+  animation: javascript 2s;
+}
+.php {
+  width: 60%;
+  animation: php 2s;
+}
+.java {
+  width: 15%;
+  animation: java 2s;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+@keyframes php {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+@keyframes java {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 15%;
+  }
+}
+
+.cv {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.cv h1 {
+  font-size: 3em;
+  margin-left: 0%;
+}
+.cv a{
+  text-decoration: none;
+  padding: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #8c8c8c;
+  color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.cv a:hover {
+  background-color: #999999;
+}
+
+/* portfolio gedeelte van pagina */
+
+.portfolio_container {
+  margin-bottom: 2em;
+}
+.text_portfolio  {
+  display: block;
+  width: 46%;
+  margin-left: 31%;
+}
+
+.text_portfolio h1 {
+  font-size: 3em;
+  margin-left: 27%;
+}
+.boven_text_portfolio {
+  margin-left: 22%;
+  padding-bottom: 15px;
+}
+.tussen_text_portfolio {
+  margin-left: 42%;
+  padding-bottom: 15px;
+}
+
+#portfolio{
+  background-size: auto, cover;
+  background-color: #e6e6e6;
+  padding-top: 50px;
+}
+
+#portfolio h4{
+  padding-bottom: 25px;
+}
+.portfolio_info_deel{
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  justify-self: center;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.portfolio_info_deel:hover{
+  -webkit-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
+  -o-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
+  -ms-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
+  -ms-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
+}
+.image_display{
+  height: 200px;
+}
+.portfolioimages{
+  width: 50%;
+  margin: auto;
+  display: block;
+  padding-top: 18px;
+}
+#portfolio a{
+  display: block;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 30%;
+}
+#portfolio a:hover {
+  background-color: #d9d9d9;
+}
+#modaalAchtergrond{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  border: solid 1px black;
+  animation: opacity 1s;
+  animation-timing-function:linear;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+}
+.portfolio_container {
+  margin-bottom: 0;
+  padding-bottom: 2em;
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+    background-color: black;
+  }
+  100%{
+    opacity: 1;
+    background-color: black;
+  }
+}
+#modaalVenster{
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  background-color: #fff;
+  padding: 2em;
+  height: 80%;
+  overflow: auto;
+  animation: underappear 1s linear;
+  -webkit-box-shadow: -1px 1px 23px 0px rgba(0,0,0,.75);
+  border-radius: 8px;
+}
+@keyframes underappear {
+  0% {
+    transform: translateY(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#sluitKnop{
+ float: right;
+ background-image: url(images/cross_icon.png);
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ width: 30px;
+ height: 27px;
+ border: none;
+ cursor:pointer;
+}
+#sluitKnop span{
+  display: none;
+}
+.modal_images{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+}
+.site_links{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: color 0.3s ease, background-color 0.3s;
+  text-decoration: none;
+}
+.site_links:hover{
+  color:white;
+  background-color: black;
+}
+
+/* contact gedeelte van pagina */
+
+.contact h1 {
+  font-size: 3em;
+}
+.contact_img {
+  width: 50px;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  margin-top: -1em;
+  padding-bottom: 5em;
+  padding-top: 10px;
+}
+
+/* responsive gedeelte van pagina */
+
+@media screen and (max-width: 665px) {
+  .button_nav {
+    margin: 14px 0px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+   .probeersel{
+     margin: auto;
+  }
+   .portfolio_container{
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+   .image_grid{
+     justify-self: center;
+   }
+   .portfolio_info_deel:not(.portfolioimages){
+     width: 100%;
+   }
+   .portfolioimages{
+     width: 200px;
+   }
+   .text_portfolio {
+     margin-left: 25%;
+   }
+   .text_portfolio h1 {
+     margin-left: 0;
+   }
+   .tussen_text_portfolio {
+     margin-left: 27%;
+   }
+   .text_overmij {
+     margin-left: 25%;
+   }
+   .text_overmij h1 {
+     margin-left: 0;
+   }
+ }
+
+@media screen and (min-width: 900px) {
+   .probeersel{
+     justify-content: center;
+   }
+   .portfolio_container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+   .image_grid{
+     justify-self: center;
+   }
+}
+@media screen and (min-width: 1400px) {
+ .probeersel{
+   justify-self: center;
+ }
+ .klein{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+ .groot{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+ }
+ .image_grid{
+   justify-self: center;
+ }
+}
