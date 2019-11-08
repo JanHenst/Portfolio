@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jan van der Henst">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio</title>
 </head>
 
 <body>
-  <nav class="nav-bar">
+  <nav class="nav-bar" id="nav">
     <a href="#contact" class="contact_button button_nav">Contact</a>
     <a href="#portfolio" class="portfolio_button button_nav">Portfolio</a>
     <a href="#skills" class="skills_button button_nav">Skills</a>
@@ -19,24 +18,24 @@
     <a href="#header" class="header_button button_nav">Home</a>
   </nav>
   <header id="header">
-    <h2 class="naam">Jan van der Henst</h2>
+    <h1 class="naam">Jan van der Henst</h1>
     <h4 class="dat">Front-end media developer</h4>
   </header>
   <div id="OverMij" class="Overmij">
     <div class="text_overmij">
       <h1>Over mij</h1>
-      <h3>Mijn naam is Jan van der Henst, 17 jaar oud <br> en woon in Haarlem. Ik volg nu de opleiding Mediadeveloper <br> op het Mediacollege Amsterdam.</h3>
-      <p>Ik koos voor deze opleiding, omdat ik het al een lange tijd voordat <br> ik de opleiding koos het interessant vond om meer <br> te weten te komen over hoe een site nou eigenlijk wordt gemaakt.</p>
+      <h3>Mijn naam is Jan van der Henst, 17 jaar oud en woon in Haarlem. <br> Ik volg nu de opleiding Mediadeveloper op het Mediacollege Amsterdam.</h3>
+      <p>Ik heb voor deze opleiding gekozen, omdat ik meer wilde weten over het bouwen van apps en websites.</p>
       <p>Op dit moment ben ik tweedejaars student en mijn voorkeur gaat uit naar html en css.</p>
-      <p>Ik ben dus meer een front-end developer dan een back-end developer. <br> Ik ben wel van plan om meer te leren van back-end programming. <br> Na deze opleiding ga ik een HBO-opleiding volgen.</p>
-      <p>Voor de toekomst hoop ik een professionele developer te worden.</p>
+      <p>Ik ben dus meer een front-end developer dan een back-end developer. <br> Ik ben wel van plan om meer te leren van back-end programming. <br> Om meer kennis op te doen ben ik van plan na deze opleiding een HBO-opleiding te volgen.</p>
+      <p>In de toekomst hoop ik als developer aan de slag te gaan in een bedrijf, <br> waar veel in teams aan verschillende projecten wordt gewerkt.</p>
     </div>
   </div>
 
   <br>
 
   <div id="skills" class="skills">
-    <h1>Mijn Skills</h1>
+    <h1>Programming skills</h2>
     <li>
       <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
     </li>
@@ -56,6 +55,13 @@
     <li>
       <h3>Java</h3><span class="bar"><span class="java"></span></span>
     </li>
+    <br>
+    <h1>Personal skills</h2>
+    <ul>
+      <li><h3>Nauwkeurig</h3></li>
+      <li><h3>Oplossingsgericht</h3></li>
+      <li><h3>Stressbestendig</h3></li>
+    </ul>
     <br>
     <div class="cv">
       <h1>CV</h1>
@@ -138,15 +144,20 @@
   </div>
 
   <section id="TheWallSection" title="Wall" class="inhoud">
-    <h2>The wall</h2>
-    <hr>
+    <h2>The Wall</h2>
+    <h4>Belangrijkste programmeertaal: Php</h4>
+    <span class="modaalBar"></span>
     <br>
     <img src="images/Fullscreen_thewall.png" class="modal_images" alt="IMac met een de site TheWall erop">
-    <h3>De wall is een project voor school waarin een vriend en ik een instagram clone moesten maken.</h3><br>
-    <p>Ik heb dit project met één iemand anders gemaakt, in dit project hebben we samen voor dat we waren begonnen met coderen nog eerst wireframes backlog en andere dingen gemaakt en die kunt u ook vinden op de github.
-       In dit project heb ik de login, register en logout gemaakt dit heb ik vooral met php gedaan.
-       Ik ben tijdens het project tegen een aantal dingen aan gelopen maar deze problemen heb ik opgelost door internet te gebruiken.</p>
-    <hr>
+    <h3>De Wall is een project waarin een studiegenoot en ik een instagram-clone moesten maken.</h3>
+    <p>Dit project heb ik in het eerste jaar met een studiegenoot gedaan. De opdracht was het maken van een instagram-clone.
+       Eerst hebben we de debriefing, het functioneel ontwerp, de backlog en de wireframes gemaakt. Hierna zijn we begonnen met coderen: ik ontwikkelde de registreer-, log in- en log uit-pagina met Html en Php;
+       mijn studiegenoot ontfermde zich over de homepage en de uploadpage. Nadat we klaar waren met de back-end, startten we met de front-end van de website.
+       De samenwerking met mijn studiegenoot ging prima. We hebben de website binnen de gestelde termijn van acht weken opgeleverd en hebben aan alle eisen voldaan.
+       Daarna is het project gepresenteerd aan de ouders van alle eerstejaars leerlingen. De ouders mochten stemmen en onze website behoorde tot de beste vijf.
+    </p>
+    <p>Alle detailinformatie, zoals wireframes, backlog en debriefing staan op github.</p>
+    <span class="modaalBar under"></span>
     <br>
     <a class="site_links" target="_blank" href="https://zenzo-arian.com/TheWall/show.php">De website</a>
     <a class="site_links" target="_blank" href="https://github.com/ZenzoX/The-wall-Jan-Zenzo.">Github</a>
@@ -154,14 +165,24 @@
 
   <section id="MyBandSection" title="MyBand" class="inhoud">
     <h2>MyBand</h2>
-    <hr>
+    <h4>Belangrijkste programmeertaal: Php</h4>
+    <span class="modaalBar"></span>
     <br>
-    <img src="images/Fullscreen_myband.png" class="modal_images" alt="IMac met een de site TheWall erop">
-    <h3>MyBand is een opdracht van school waarin je in je eentje een site moest maken en je mocht je eigen onderwerp verzinnen.</h3><br>
-    <p>Voordat ik begon met het coderen van de pagina heb ik eerst nog een aantal dingen gemaakt zoals de wireframes deze bestanden kunt u in de github vinden.
-       Voor deze site waren er een aantal eisen waar de site aan moest voldoen zoals de agenda pagina, de pagination, de form en nog wat andere dingen dus daarom is niet alles van wat u op de site kan vinden van toepassing.
-       Ik ben tijdens het maken van de pagina tegen een aantal dingen aan gelopen waaronder de paginaton maar dit heb ik op kunnen lossen door hulp te krijgen van een klasgenoot.
-    <hr>
+    <img src="images/Fullscreen_myband.png" class="modal_images" alt="IMac met een de site MyBand erop">
+    <h3>MyBand is een solo project: maak je eigen website.</h3>
+    <p>Dit project was het maken van een eigen website die wel aan een aantal eisen moest voldoen.
+       Deze eisen waren onder andere dat alle informatie op de site uit een database moest komen.
+       Ook moesten er minimaal twee informatiepagina’s, een contact- en een agendapagina aanwezig zijn.
+       Ik heb het project alleen gedaan.
+       Na het maken van een kort Plan van aanpak ben ik begonnen aan de wireframes en het functioneel ontwerp.
+       Vervolgens ben ik gestart met het coderen van de site. Wat ik lastig vond, was het bedenken van het design van de website.
+       Vandaar dat ik heb gekozen voor een simpele look.
+       De website voldoet aan alle technische eisen.
+       Bij de pagination liep ik tegen problemen op, dus heb ik de hulp ingeroepen van een studiegenoot.
+       Daarna kon ik weer verder.
+    </p>
+    <p>Ook voor dit project is alle detailinformatie te vinden op github.</p>
+    <span class="modaalBar"></span>
     <br>
     <a class="site_links" target="_blank" href="http://janvanderhenst.nl/myband/public/home">De website</a>
     <a class="site_links" target="_blank" href="https://github.com/JanHenst/MyBand-Starter">Github</a>
@@ -169,14 +190,17 @@
 
   <section id="IddinkSection" title="Iddink" class="inhoud">
     <h2>Iddink</h2>
-    <hr>
+    <h4>Belangrijkste programmeertaal: Css</h4>
+    <span class="modaalBar"></span>
     <br>
     <img src="images/Fullscreen_iddink.png" class="modal_images" alt="IMac met een de site Iddink erop">
-    <h3>Een project voor school waarin je in je eentje een pixel perfect copy van een foto die we kregen moest maken.</h3><br>
-    <p>In deze opdracht heb ik geen en hoefde ik ook geen extra dingen zoals wireframes of andere dingen te maken.
-       Tijdens het maken van de website ben ik niet tegen problemen aan gelopen.
-       Dit kwam ook doordat de opdracht niet heel moeilijk was en je alleen met html en css moest werken, maar hierdoor heb ik wel meer geleerd van het precies maken van een site met css.</p>
-    <hr>
+    <h3>Solo project: maak een pixel-perfect copy van een foto.</h3>
+    <p>Dit was een individuele opdracht, waarin ik van te voren een foto kreeg van een operationele site.
+       Deze foto moest ik pixel-perfect overzetten naar een site met behulp van Html en Css.
+       Er waren dus geen functionaliteiten nodig. Ik liep niet tegen problemen aan tijdens het maken van de site, maar heb ik wel veel geleerd van het maken van een site met Css.
+    </p>
+    <p>Op github is alleen de codering te vinden.</p>
+    <span class="modaalBar"></span>
     <br>
     <a class="site_links" target="_blank" href="http://25453.hosts2.ma-cloud.nl/bewijzenmap/periode3.3/UXD/CopyThatSite/">De website</a>
     <a class="site_links" target="_blank" href="https://github.com/JanHenst/Iddink">Github</a>
@@ -184,15 +208,19 @@
 
   <section id="SeoSection" title="Seo optimazation" class="inhoud">
     <h2>Seo optimazation</h2>
-    <hr>
+    <h4>Belangrijkste programmeertaal: Html</h4>
+    <span class="modaalBar"></span>
     <br>
     <img src="images/Fullscreen_seo.png" class="modal_images" alt="IMac met een de site Seo optimazation erop">
-    <h3>Een opdracht voor school waarin je in je eentje en site kreeg van school en die moest je dan verbeteren.</h3><br>
-    <p>Voor deze site waren geen extra dingen nodig zoals wireframes dus die zijn ook niet gemaakt. In deze opdracht moest je ervoor zorgen dat je de fouten op de site stonden eruit halen en de dingen die onzin zijn veranderen.
-       Op de site was er eerst een sectie die over huizen ging maar dat moest je dan veranderen naar iets wat er bij past en in mijn geval deed ik "Mijn programmeertalen".
-       Tijdens het maken van de opdracht ben ik tegen één probleem aangelopen en dat was dat de plaatjes van de sectie "Mijn programmeertalen" niet meewerkten en niet de goede size waren.
-       Dit heb ik opgelost door die plaatjes in een resizer te doen en dit loste het probleem op.</p>
-    <hr>
+    <h3>Solo project: verbeter een website.</h3>
+    <p>Voor deze individuele opdracht kreeg ik een voorbeeld site die inhoudelijk niet correct was.
+       De fouten op de site moest ik vinden en verbeteren en onzinnige zaken veranderen: bijvoorbeeld een deel van de pagina was gevuld met foto’s van woningen die niets met de site te maken hadden.
+       Dit heb ik vervangen door logo’s van programmeertalen.
+       Tijdens het maken van de opdracht ben ik tegen één probleem aangelopen en dat was dat de logo’s van de programmeertalen niet goed op hun positie stonden en sommigen te groot waren.
+       Om dit probleem op te lossen, heb ik gebruikgemaakt van een resizer.
+    </p>
+    <p>Op github is alleen de codering te vinden.</p>
+    <span class="modaalBar"></span>
     <br>
     <a class="site_links" target="_blank" href="http://26615.hosts2.ma-cloud.nl/bewijzenmap/periode1.3/uxd/SEO-page/seo-opdracht2.html">De website</a>
     <a class="site_links" target="_blank" href="https://github.com/JanHenst/Seo-optimazation">Github</a>
@@ -200,21 +228,22 @@
 
   <section id="ViewerSection" title="ImageViewer" class="inhoud">
     <h2>ImageViewer</h2>
-    <hr>
+    <h4>Belangrijkste programmeertaal: Javascript</h4>
+    <span class="modaalBar"></span>
     <br>
     <img src="images/Fullscreen_imageviewer.png" class="modal_images" alt="IMac met een de site ImageViewer erop">
-    <h3>ImageViewer was een opdracht waarin je in je eentje een site moest maken die door images heen kon scrollen.</h3><br>
-    <p>Voor deze opdracht waren geen wireframes of andere dingen nofig. In deze opdracht moest je voornamelijk met javascript werken om ervoor te zorgen dat je met de pijlen die je op de site ziet door de images kan scrollen.
-       Met de linker en rechter pijl kan je 1 image verder scrollen en met de pijlen boven en onder kan je 5 images verder scrollen.
-       Naast deze funtie kan je ook nog op het plaatje wat je wilt hebben klikken en elke keer dat je de pagina reload is er een ander begin plaatje.
-       Ik ben tijdens de opdracht geen problemen tegen gekomen.</p>
-    <hr>
+    <h3>Solo opdracht: oefenen met Javascript.</h3>
+    <p>Dit was een individuele opdracht, waarin ik moest oefenen met Javascript.
+       Ik moest ervoor zorgen dat je door de images kon scrollen en dat de pijlen clickable waren.
+       Een deel van de code werd beschikbaar gesteld door school en de rest heb ik zelf gemaakt met Javascript.
+       Het was geen lastige opdracht.
+     </p>
+     <p>De codering is op github te vinden.</p>
+    <span class="modaalBar"></span>
     <br>
     <a class="site_links" target="_blank" href="http://26615.hosts2.ma-cloud.nl/bewijzenmap/periode1.1/pro1/imageviewer/">De website</a>
     <a class="site_links" target="_blank" href="https://github.com/JanHenst/ImageViewer">Github</a>
   </section>
-
-  <br>
 
   <footer>
     <div id="contact" class="contact">

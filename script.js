@@ -10,10 +10,12 @@ let modaleInhouden = new Object();
 const sluitModaal = () => {
   modaal.parentNode.removeChild(modaal);
   modaalVenster.innerHTML = '';
+  document.getElementById('nav').style.display = "block";
 }
 
 modaalVenster.addEventListener('click', (e) => {
   e.stopPropagation();
+
 })
 
 sluitKnop.addEventListener('click', sluitModaal);
@@ -27,7 +29,7 @@ for(let i=0; i<triggers.length; i++){
     modaalVenster.appendChild(sluitKnop);
     modaalVenster.appendChild(modaleInhouden[item]);
     document.body.appendChild(modaal);
-
+    document.getElementById('nav').style.display = "none";
   })
 }
 

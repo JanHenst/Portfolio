@@ -20,8 +20,9 @@ header {
 }
 
 .naam {
-  font-size: 41px;
-  padding-top: 5em;
+  font-size: 4em;
+  margin: 0;
+  padding-top: 3em;
 }
 
 .dat {
@@ -36,17 +37,18 @@ h2, h4 {
 /* navbar gedeelte van pagina */
 
 nav {
-  background-color: #333333;
+  background-color: #2c2d40;
   position: sticky;
   top: 0;
   width: 100%;
   height: 50px;
   z-index: 1;
+  transition: .5s ease;
 }
 
 
 nav a{
-  background-color: #333333;
+  background-color: #2c2d40;
   color: white;
   float: right;
   margin-top: 5px;
@@ -79,26 +81,25 @@ nav a{
 /* over mij gedeelte van pagina*/
 
 .Overmij {
-  background-color: #e6e6e6;
+  background-color: #3f7efb;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
   padding-bottom: 2em;
   margin-bottom: -4px;
+  margin: 0 auto;
   display: inline-block;
 }
 
 .text_overmij {
-  float: left;
   display: block;
-  width: 56%;
-  margin-left: 31%;
+  color: white;
+  margin-left: 25%;
 }
 
 .text_overmij h1 {
   font-size: 3em;
-  margin-left: 25%;
 }
 .text_overmij h3 {
   font-size: 19px;
@@ -111,7 +112,7 @@ nav a{
 /* Mijn skills gedeelte van pagina */
 
 .skills {
-  background-color: gray;
+  background-color: #2b2c40;
   margin-bottom: -2.2em;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -130,7 +131,7 @@ nav a{
 }
 
 .bar {
-  background: #353b48;
+  background: white;
   display: block;
   height: 2px;
   border-radius: 3px;
@@ -139,7 +140,7 @@ nav a{
 .bar span {
   height: 2px;
   float: left;
-  background: #2187e7;
+  background: #3f7efb;
 }
 .html {
   width: 90%;
@@ -216,13 +217,13 @@ nav a{
   padding: 13px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #8c8c8c;
+  background-color: #5c8ff5;
   color: white;
   border: 1px solid black;
   border-radius: 15px;
 }
 .cv a:hover {
-  background-color: #999999;
+  background-color: #84adff;
 }
 
 /* portfolio gedeelte van pagina */
@@ -232,26 +233,24 @@ nav a{
 }
 .text_portfolio  {
   display: block;
-  width: 46%;
-  margin-left: 31%;
+  text-align: center;
 }
 
 .text_portfolio h1 {
   font-size: 3em;
-  margin-left: 27%;
 }
 .boven_text_portfolio {
-  margin-left: 22%;
   padding-bottom: 15px;
 }
 .tussen_text_portfolio {
-  margin-left: 42%;
+  text-align: center;
   padding-bottom: 15px;
 }
 
 #portfolio{
   background-size: auto, cover;
-  background-color: #e6e6e6;
+  background-color: #3f7efb;
+  color: white;
   padding-top: 50px;
 }
 
@@ -284,17 +283,19 @@ nav a{
 }
 #portfolio a{
   display: block;
-  color: gray;
+  color: white;
   text-align: center;
   text-decoration: none;
-  border: 2px solid gray;
+  border: 2px solid white;
   border-radius: 10px;
   padding: 10px;
   margin: 0 auto;
   width: 30%;
+  transition: 1s ease;
 }
 #portfolio a:hover {
-  background-color: #d9d9d9;
+  transition: .3s ease;
+  background-color: #578fff;
 }
 #modaalAchtergrond{
   height: 100vh;
@@ -323,11 +324,20 @@ nav a{
     background-color: black;
   }
 }
+.modaalBar {
+  background: black;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
 #modaalVenster{
   width: 50%;
   justify-self: center;
   align-self: center;
-  background-color: #fff;
+  background-color: #a8c5ff;
   padding: 2em;
   height: 80%;
   overflow: auto;
@@ -348,7 +358,9 @@ nav a{
  float: right;
  background-image: url(images/cross_icon.png);
  background-repeat: no-repeat;
+ background-size: cover;
  background-position: 50% 50%;
+ background-color: #a9c5fe;
  width: 30px;
  height: 27px;
  border: none;
@@ -360,11 +372,12 @@ nav a{
 .modal_images{
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   display: block;
 }
 .site_links{
   padding: 10px;
+  color: black;
   border: 1px solid black;
   border-radius: 10px;
   transition: color 0.3s ease, background-color 0.3s;
@@ -394,7 +407,7 @@ nav a{
 /* footer */
 
 footer {
-  background-color: #333333;
+  background-color: #2A2B40;
   color: white;
   text-align: center;
   margin-top: -1em;
@@ -427,17 +440,8 @@ footer {
    .portfolioimages{
      width: 200px;
    }
-   .text_portfolio {
-     margin-left: 25%;
-   }
-   .text_portfolio h1 {
-     margin-left: 0;
-   }
-   .tussen_text_portfolio {
-     margin-left: 27%;
-   }
    .text_overmij {
-     margin-left: 25%;
+     margin-left: 5%;
    }
    .text_overmij h1 {
      margin-left: 0;
